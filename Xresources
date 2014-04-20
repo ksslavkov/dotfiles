@@ -1,0 +1,210 @@
+!/* vim: set ts=2 sw=2 tw=80 et :*/
+
+!
+! Fonts
+!
+*.font: xft:Terminus:size=8:antialias=true:hinting=true
+*.boldFont: xft:Terminus:bold:size=8:antialias=true:hinting=true
+*.italicFont: xft:Terminus:italic:size=8:antialias=true:hinting=true
+*.boldItalicFont: xft:Terminus:bolditalic:size=8:antialias=true:hinting=true
+!
+!
+
+!
+! Jellybeans.vim Colors
+!
+! color0 (black) = Black
+! color1 (red) = Red3
+! color2 (green) = Green3
+! color3 (yellow) = Yellow3
+! color4 (blue) = Blue3
+! color5 (magenta) = Magenta3
+! color6 (cyan) = Cyan3
+! color7 (white) = AntiqueWhite
+! color8 (bright black) = Grey25
+! color9 (bright red) = Red
+! color10 (bright green) = Green
+! color11 (bright yellow) = Yellow
+! color12 (bright blue) = Blue
+! color13 (bright magenta) = Magenta
+! color14 (bright cyan) = Cyan
+! color15 (bright white) = White
+! foreground = Black
+! background = White
+!
+!
+! Jellybeans
+!
+! Black
+*.color0: #000000
+*.color8: #303030
+!
+! Red
+! 167:217
+*.color1: #af0000
+*.color9: #d75f5f
+!urxvt.color9: #ffafaf
+!
+! Green
+! 107:077
+*.color2: #87af5f
+*.color10: #5fdf5f
+!urxvt.color10: #afd787
+!
+! Yellow
+! 215:186
+*.color3: #ffaf5f
+*.color11: #d7d787
+!urxvt.color11: #ffdf87
+!
+! Blue
+! 110:081
+*.color4: #87afd7
+*.color12: #5fd7ff
+!
+! Magenta
+! 103:183
+!urxvt.color5: #8787af
+*.color5: #8787d7
+*.color13: #d7afff
+!
+! Cyan
+! 066:116
+*.color6: #578787
+*.color14: #87dfd7
+!
+! White
+*.color7: #afafaf
+*.color15: #d7d7d7
+!
+! Defaults
+*.background: #121212
+*.foreground: #808080
+!
+!
+
+
+! rxvt-unicode -----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+!
+! rxvt-unicode
+!
+URxvt*termName:rxvt-256color
+URxvt*geometry: 120x44
+URxvt*resource: $HOME/.Xresources
+URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/gksu-debian.svg
+URxvt*iconName: urxvt
+hold: false
+
+!
+! urxvt specific colors
+URxvt*depth: 32
+URxvt*buffered: true
+URxvt*intensityStyles: true
+URxvt*colorBD: 11
+URxvt*colorIT: 13
+URxvt*colorUL: 12
+!URxvt*underlineColor: 12
+!URxvt*fading: 0
+!URxvt*fadeColor: 0
+
+!
+! Cursor
+!
+URxvt*cursorColor: 10
+URxvt*cursorColor2: 0
+URxvt*cursorBlink: false
+URxvt*cursorUnderline: false
+
+!
+! Border
+URxvt*borderColor: 0
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+URxvt*borderLess: false
+
+!
+! Frack the fracking bell
+URxvt*urgentOnBell: false
+URxvt*visualBell: false
+URxvt*loginShell: true
+URxvt*utmpInhibit: false
+
+!
+! Scrolling
+! Only scroll in gnu-screen
+URxvt*saveLines: 0
+URxvt*jumpScroll: true
+URxvt*skipScroll: true
+! ScrollBar Thinkness in pixels
+URxvt*thickness: 0
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: false
+URxvt*scrollTtyKeypress: true
+
+! Perl
+URxvt*perl-ext-common: default,matcher,tabbedex,clipboard
+
+!
+! URL Clickable
+URxvt*url-launcher: /usr/bin/firefox
+URxvt*matcher.button: 1
+
+!
+! Tabs with names
+URxvt*tabbed.new-button: false
+URxvt*tabbed.title: false
+URxvt*tabbed.tabbar-fg: 7
+URxvt*tabbed.tabbar-bg: 8
+URxvt*tabbed.tab-fg: 8
+URxvt*tabbed.tab-bg: 7
+
+! Xterm -----------------------------------------------------------------------
+! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+!
+! Core term config
+xterm*termName: xterm-256color
+xterm*locale: true
+xterm*utf8: 2
+xterm*eightBitInput: true
+xterm*loginShell: true
+!! This sets Menus to be opened as ??x?? not just the term
+xterm*VT100.geometry: 120x44
+xterm*toolBar: false
+xterm*selectToClipboard: true
+xterm*cursorBlink: false
+xterm*bellIsUrgent: false
+xterm*visualbell: false
+xterm*marginBell: false
+xterm*poponbell: true
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*borderWidth: 0
+xterm*fullscreen: false
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Font
+xterm*faceName: Terminus:style=Regular:size=9
+xterm*boldFont: Terminus:style=Regular:size=9
+xterm*wideBoldFont: Terminux:style=Bold:size=9
+xterm*boldMode: false
+xterm*allowBoldFonts: false
+xterm*fontDoublesize: false
+xterm*scaleHeight: 1.01
+xterm*scaleWidth: 1.01
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Key bindings
+xterm*metaSendsEscape: true
+!
+! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Scroll
+xterm*saveLines: 0
+xterm*fastScrool: true
+xterm*jumpScroll: true
+xterm*scrollTtyOutput: false
+xterm*multiScroll: true
+xterm*scrollKey: true
+xterm*scrollBar: false
+xterm*rightScrollBar: true
